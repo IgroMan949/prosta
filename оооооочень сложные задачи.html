@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>примеры по высшей математике 4 курса физмата</title>
+  </head>
+  <body>
+
+    <p>примеры по высшей математике 4 курса физмата</p>
+    <ul>
+      <li>7 + 5 = ?</li>
+      <li>12 - 8 = ?</li>
+      <li>4 * 3 = ?</li>
+      <li>15 / 5 = ?</li>
+    </ul>
+    <form>
+      <h2>Введите ответы</h2>
+      <label for="question1">Задание 1:</label>
+      <input type="number" id="question1" name="question1" required><br>
+      <label for="question2">Задание 2:</label>
+      <input type="number" id="question2" name="question2" required><br>
+      <label for="question3">Задание 3:</label>
+      <input type="number" id="question3" name="question3" required><br>
+      <label for="question4">Задание 4:</label>
+      <input type="number" id="question4" name="question4" required><br>
+      <button onclick="checkAnswers()">Проверить ответы</button>
+    </form>
+    
+    <script>
+      function checkAnswers() {
+        // Получаем значения ответов из формы
+        var answer1 = Number(document.getElementById("question1").value);
+        var answer2 = Number(document.getElementById("question2").value);
+        var answer3 = Number(document.getElementById("question3").value);
+        var answer4 = Number(document.getElementById("question4").value);
+    
+        
+        // Проверяем правильность ответов
+        if (answer1 == 12 && answer2 == 4 && answer3 == 12 && answer4 == 3) {
+          // Выводим сообщение об успехе
+          alert("Я никого так не любил как, ты моя самая большая радость на сегодняшний день, прости меня за то что я такой некудышный романтик, я очень хочу чтобы ты была счаслива со мной <3");
+        } else {
+          // Выводим сообщение об неудаче
+          alert("Попробуйте еще раз.");
+        }
+      }
+    </script>
+  </body>
+</html>
